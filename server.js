@@ -67,7 +67,3 @@ app.get("/api/restaurants", (req, res) => {
 
     res.json(restaurants);
 });
-
-app.listen(3000, () => {
-    console.log("listening");
-});

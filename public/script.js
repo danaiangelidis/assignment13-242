@@ -14,7 +14,7 @@ const showRestaurants = async() => {
         restaurantsDiv.append(section);
 
         const image = document.createElement("img");
-        image.src = `http://localhost:3000/${restaurant.img}`;
+        image.src = `https://assignment-13.onrender.com/${restaurant.img}`;
         section.append(image);
 
         const info = document.createElement("section");
@@ -84,7 +84,7 @@ const getLi = (data) => {
 
 const getRestaurants = async() => {
     try {
-        return (await fetch("http://localhost:3000/api/restaurants")).json();
+        return (await fetch("https://assignment-13.onrender.com/api/restaurants")).json();
     } catch (error) {
         console.log("error" + error + "retrieving json");
         return "";
