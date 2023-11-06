@@ -14,7 +14,7 @@ const showRestaurants = async() => {
         restaurantsDiv.append(section);
 
         const image = document.createElement("img");
-        image.src = `${restaurant.img}`;
+        image.src = `http://localhost:3000/${restaurant.img}`;
         section.append(image);
 
         const info = document.createElement("section");
