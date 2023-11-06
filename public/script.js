@@ -14,7 +14,7 @@ const showRestaurants = async() => {
         restaurantsDiv.append(section);
 
         const image = document.createElement("img");
-        image.src = `https://assignment-13.onrender.com/${restaurant.img}`;
+        image.src = `${restaurant.img}`;
         section.append(image);
 
         const info = document.createElement("section");
